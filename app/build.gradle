@@ -9,10 +9,10 @@ android {
     signingConfigs {
 
         devaldroid {
-            keyAlias config_keyAlias
-            keyPassword config_keyPassword
-            storeFile file(config_storeFile)
-            storePassword config_storePassword
+            keyAlias project.property("config_keyAlias")
+            keyPassword project.property("config_keyPassword")
+            storeFile file(project.property("config_storeFile"))
+            storePassword project.property("config_storePassword")
         }
     }
 
